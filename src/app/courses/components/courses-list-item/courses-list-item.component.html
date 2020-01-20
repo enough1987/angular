@@ -1,0 +1,26 @@
+<div class="container-fluid course-item-wrapper">
+ <div class="row course-item-header">
+
+  <div class="col-4">
+   <p> {{ item.title }} </p>
+  </div>
+  <div class="col-4">
+   <span> {{ item.durationMin }} </span>
+  </div>
+  <div class="col-4">
+   <span> {{ item.creationDate.getDate() }} </span>
+  </div>
+ </div>
+
+ <div class="row course-item-body">
+
+  <div class="col-8">
+   <p> {{ item.description }} </p>
+  </div>
+  <div class="col-4">
+   <button class="btn btn-info course-item-btn" (click)="editCourse()"> Edit </button>
+   <button class="btn btn-info course-item-btn" (click)="deleteCourse()"> Delete </button>
+  </div>
+
+ </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="courses-wrapper">
+
+ <app-courses-header></app-courses-header>
+
+ <app-courses-search (search)="search($event)"></app-courses-search>
+
+ <app-courses-pannel (add)="add($event)"></app-courses-pannel>
+
+ <app-courses-list-items [items]="items" (edit)="edit($event)" (delete)="delete($event)">
+ </app-courses-list-items>
+
+</div>

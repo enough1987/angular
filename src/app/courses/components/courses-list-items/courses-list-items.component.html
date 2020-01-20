@@ -1,0 +1,4 @@
+<ng-container *ngFor="let item of items">
+ <app-courses-list-item [item]="item" (edit)="editCourse($event)" (delete)="deleteCourse($event)">
+ </app-courses-list-item>
+</ng-container>
